@@ -1,0 +1,13 @@
+
+
+public class ArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Khai bao ArrayList kieu khong tuong minh
+		java.util.ArrayList ds = new java.util.ArrayList();
+		
+
+	}
+
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="Row row = sheet.createRow(rowNumber);"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="Row row = sheet.createRow(rowNumber);"/>
+			<item value="row"/>
+			<item value="font"/>
+			<item value="JComboBox"/>
+			<item value="JCombobox"/>
+			<item value="JTextField"/>
+			<item value="pnContentUser"/>
+			<item value="ContentUser"/>
+		</list>
+		<list key="replacehistory">
+			<item value="JComboBox&lt;Integer&gt;"/>
+			<item value="JCombobox&lt;inte"/>
+			<item value="JCombobox"/>
+			<item value="pnUser"/>
+			<item value="User"/>
+			<item value="pnDoDaiPass"/>
+			<item value="pnDoDaiUser"/>
+			<item value="pnCheckBoxPass"/>
+			<item value="txtDoDaiPass"/>
+			<item value="chkSymboysPass"/>
+			<item value="chkNumbersPass"/>
+			<item value="chkSmallCharsPass"/>
+			<item value="chkCapitalCharsPass"/>
+			<item value="Password"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="870"/>
+		<item key="DIALOG_Y_ORIGIN" value="130"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="382"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

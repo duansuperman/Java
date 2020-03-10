@@ -1,0 +1,12 @@
+package collection;
+
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Khai bao HashMap 
+		HashMap mang the hien key va value 
+
+	}
+
+}

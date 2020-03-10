@@ -1,0 +1,11 @@
+package learnjava.com.vn.main;
+
+import learnjava.com.vn.connection.Connection;
+
+public class Main {
+	public static void main(String[] args) {
+		if(Connection.getConnection()!=null) {
+			System.out.println("Success");
+		}
+	}
+}

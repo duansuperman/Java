@@ -1,0 +1,23 @@
+package learnjava.com.vn.connection;
+
+import java.util.Properties;
+
+import com.mysql.jdbc.Driver;
+
+public class Connection {
+	public static Connection getConnection() {
+		Connection conn=null;
+		try {
+			String strCon= "jdbs:mysql://localhost/dbQuanLyBanHang";
+			Properties pro = new Properties();
+			pro.put("user", "root");
+			pro.put("password", "");
+			Driver driver = new Driver();
+			conn = (Connection) driver.connect(strCon, pro);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
+}

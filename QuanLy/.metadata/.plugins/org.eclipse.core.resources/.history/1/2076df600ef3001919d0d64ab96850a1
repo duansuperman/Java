@@ -1,0 +1,5 @@
+package jtree;
+
+public class Main {
+	MyWindow mw = new MyWindow("Jtree");
+}

@@ -1,0 +1,13 @@
+package collection;
+
+public class ArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Khai bao ArrayList kieu khong tuong minh
+		ArrayList ds  = new ArrayList();
+		
+
+	}
+
+}

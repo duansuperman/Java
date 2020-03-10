@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Bai32-PreparedStatement&apos;&#x0D;&#x0A;- Original project: &apos;Bai31-XoaDuLieu-MSAccess&apos;&#x0D;&#x0A;- Destination element: &apos;Bai32-PreparedStatement&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     libs&#x0D;&#x0A;     db" description="Copy folders" destination="=Bai32-PreparedStatement" element1="libs" element2="db" files="0" flags="589830" folders="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1566580171415" units="0" version="1.0"/>
+</session>

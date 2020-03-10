@@ -1,0 +1,23 @@
+package learnjava.com.vn.drivers;
+
+import java.awt.List;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.Vector;
+
+import learnjava.com.vn.modules.HangHoa;
+
+public class HangHoaDriver {
+	public static  Connection conn = learnjava.com.vn.connection.Connection.getConnection();
+	public static Vector<HangHoa> getAllData(){
+		Vector<HangHoa> vecHangHoa = null;
+		try {
+			String strSQL = "Select * from HangHoa";
+			PreparedStatement prepare = 
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return vecHangHoa;
+	}
+}

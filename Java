@@ -1,0 +1,29 @@
+1. Java do hãng Sun Mycrosystem xây dựng và phát triển 
+		được phát triển dựa trên ngôn ngữ c/c++
+		là ngôn ngữ triển khai lập trình OOP và độc lộc nền tảng
+		viết một nơi chạy mọi nơi.
+
+2.package là thu mục tổ chứ hệ thông thông tin. Nên đặt tên package là chữ thường không dấu. Nếu viết in hoa sẽ xảy ra lôi khi qua android
+3.Chuỗi quan tâm đến ký tự đầu
+4. Có 2 collection sử dụng nhiều nhất arrayList hashmap
+5. Chú ý : Calendar trong xử  lý ngày tháng java thì sẽ chạy từ 0->11
+6.StringBuilder thay thế cho nối chuỗi (thay thế dấu +)
+7.StringTokenize dùng phiên bản jdk <1.4 còn lớn hơn đã có split()
+8. Calendar là nội hàm để lấy ngày tháng năm còn SimpleDateFormat là dùng để format theo định dạng nào đó "dd/MM/yyyy"
+9. Mọi lớp được tạo ra đều kế thừa từ object 
+10. Trong cùng một lớp có nhiều phương thức giống nhau nhưng khác nhau về signature:
+	Signature :
+		Số lượng các đối số khác nhau.
+		Hoặc dữ liệu các đối số khác nhau.
+		Kiểu trả về không phải signature.
+11.Alias : 1 ô nhớ có thể có 1 2 hay nhiều đối tượng quản lý.
+
+12. Thành phần static:
+	Thuộc tính khai báo là static: class member/ class variable.
+	Phương thức static.
+	Cả 2 trường hợp trên đều được cấp phát vùng nhớ 1 lần duy nhất và ra đời trước đối tượng
+	Các biến, thuộc tính được truy xuất trực tiếp thông qua tên lớp TenLop.(Tên thuộc tính/tên phương thức)
+	Các phương thức static không thể gọi các phương thức không phải static 
+	
+13. Đối với interface bắt buộc các thuộc tính/ phương thức thức phải để public và mặ định là abstract
+ 

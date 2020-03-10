@@ -1,0 +1,44 @@
+package learnjava.com.vn.modules;
+
+public class HangHoa {
+	int Ma;
+	String TenHangHoa;
+	String DinhDanh;
+	int SoLuong;
+	double DonGia;
+	public int getMa() {
+		return Ma;
+	}
+	public void setMa(int ma) {
+		Ma = ma;
+	}
+	public String getTenHangHoa() {
+		return TenHangHoa;
+	}
+	public void setTenHangHoa(String tenHangHoa) {
+		TenHangHoa = tenHangHoa;
+	}
+	public String getDinhDanh() {
+		return DinhDanh;
+	}
+	public void setDinhDanh(String dinhDanh) {
+		DinhDanh = dinhDanh;
+	}
+	public int getSoLuong() {
+		return SoLuong;
+	}
+	public void setSoLuong(int soLuong) {
+		SoLuong = soLuong;
+	}
+	public double getDonGia() {
+		return DonGia;
+	}
+	@Override
+	public String toString() {
+		return TenHangHoa;
+	}
+	public void setDonGia(double donGia) {
+		DonGia = donGia;
+	}
+	
+}

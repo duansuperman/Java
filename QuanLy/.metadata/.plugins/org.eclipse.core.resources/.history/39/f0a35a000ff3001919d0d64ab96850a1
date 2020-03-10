@@ -1,0 +1,10 @@
+package learnjava.com.vn.modules;
+
+public class ChiTietHoaDon {
+	int MaCT;
+	int MaHH;
+	int MaHD;
+	int SoLuongMua;
+	double ThanhTien;
+	
+}

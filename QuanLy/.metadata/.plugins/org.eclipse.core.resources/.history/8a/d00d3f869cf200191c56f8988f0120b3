@@ -1,0 +1,9 @@
+package learnjava.com.vn.connection;
+
+import java.sql.Connection;
+
+public class Class {
+	public static Connection getConnection() {
+		
+	}
+}

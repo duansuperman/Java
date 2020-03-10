@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;layout.UserInterface&apos; to &apos;FlowLayoutUserInterface&apos;&#x0D;&#x0A;- Original project: &apos;Bai15-LayoutManager&apos;&#x0D;&#x0A;- Original element: &apos;layout.UserInterface&apos;&#x0D;&#x0A;- Renamed element: &apos;layout.FlowLayoutUserInterface&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UserInterface&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;layout{UserInterface.java[UserInterface" matchStrategy="1" name="FlowLayoutUserInterface" qualified="false" references="true" similarDeclarations="false" stamp="1564292807400" textual="false" version="1.0"/>
+</session>

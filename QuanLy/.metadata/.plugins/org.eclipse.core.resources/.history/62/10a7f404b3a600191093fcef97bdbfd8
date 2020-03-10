@@ -1,0 +1,45 @@
+package collection;
+
+import java.util.HashMap;
+
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Khai bao HashMap HashMap mang the hien key va value.
+		 */ 
+		HashMap<Integer, String> hm =  new HashMap<Integer, String>();
+		hm.put(113, "OK");
+		hm.put(114, "Yes");
+		System.out.println("So luong phan tu trong hashmap "+hm.size());
+		
+		//Duyet HashMap bang for
+		
+		System.out.println("Phan tu co key 113 trong hashmap");
+		System.out.println(hm.get(113));
+		
+		//Duyet phan tu trong HashMap
+		System.out.println("Danh sach gia tri trong HashMap ");
+		for(String t: hm.values()) {
+			System.out.println(t);
+		}
+		
+		//Xoa gia  tri trong HashMap
+		hm.remove(113);
+		
+		System.out.println("Danh sach gia tri trong HashMap sau khi xoa ");
+		for(String t: hm.values()) {
+			System.out.println(t);
+		}
+		
+		//Sua gia tri trong HashMap
+		hm.set(114,"DaUpdate");
+		
+		System.out.println("Danh sach gia tri trong HashMap sau khi sua ");
+		for(String t: hm.values()) {
+			System.out.println(t);
+		}
+	}
+
+}

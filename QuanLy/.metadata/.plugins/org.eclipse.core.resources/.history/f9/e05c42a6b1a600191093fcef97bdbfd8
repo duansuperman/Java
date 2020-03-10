@@ -1,0 +1,24 @@
+package collection;
+
+import java.util.HashMap;
+
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Khai bao HashMap HashMap mang the hien key va value.
+		 */ 
+		HashMap<Integer, String> hm =  new HashMap<Integer, String>();
+		hm.put(113, "OK");
+		hm.put(114, "Yes");
+		System.out.println("So luong phan tu trong hashmap "+hm.size());
+		
+		//Duyet HashMap bang for
+		for(int i=0;i<hm.size();i++) {
+			System.out.println(hm.get(i));
+		}
+
+	}
+
+}

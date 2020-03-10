@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SerializeFileFactory.java&apos; to &apos;Bai19-QuanLyNhanVien/src/model&apos;&#x0D;&#x0A;- Original project: &apos;Luu&amp;DocFile&apos;&#x0D;&#x0A;- Destination element: &apos;Bai19-QuanLyNhanVien/src/model&apos;&#x0D;&#x0A;- Original element: &apos;luudocfile.SerializeFileFactory.java&apos;" description="Copy compilation unit" destination="=Bai19-QuanLyNhanVien/src&lt;model" element1="/src&lt;luudocfile{SerializeFileFactory.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1565015909432" units="1" version="1.0"/>
+</session>

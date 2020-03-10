@@ -1,0 +1,32 @@
+package learnjava.com.vn.connection;
+
+import java.text.Normalizer;
+import java.util.Properties;
+import java.util.regex.Pattern;
+
+import com.mysql.jdbc.Driver;
+
+public class Connection {
+	public static Connection getConnection() {
+		Connection conn=null;
+		try {
+			String strCon= "jdbs:mysql://localhost/dbQuanLyBanHangTapHoa";
+			Properties pro = new Properties();
+			pro.put("user", "root");
+			pro.put("password", "");
+			Driver driver = new Driver();
+			conn = (Connection) driver.connect(strCon, pro);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
+	
+
+	public String deAccent(String str) {
+	    String nfdNormalizedString = Normalizer.normalize("Anh yêu em", Normalizer.Form.NFD); 
+	    Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
+	    return pattern.matcher(nfdNormalizedString).replaceAll("");
+	}
+}

@@ -1,0 +1,19 @@
+package learnjava.com.vn.connection;
+
+import java.sql.Connection;
+import java.util.Properties;
+
+public class Class {
+	public static Connection getConnection() {
+		Connection conn=null;
+		try {
+			String strCon= "jdbs:mysql://localhost/dbQuanLyBanHang";
+			Properties pro = new Properties();
+			
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
+}

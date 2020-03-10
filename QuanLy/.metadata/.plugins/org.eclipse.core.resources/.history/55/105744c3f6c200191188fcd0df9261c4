@@ -1,0 +1,83 @@
+package demo;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+public class FindUI extends JDialog {
+	DefaultTableModel dtm;
+	JTable tbSinhVien;
+	public FindUI(String title) {
+		this.setTitle(title);
+		addControls();
+		showWindow();
+	}
+	JButton btnSearch;
+	JTextField txtSearch;
+	Connection conn;
+	public void addControls() {
+		dtm= new DefaultTableModel();
+		dtm.addColumn("Họ tên");
+		dtm.addColumn("Địa chỉ");
+		dtm.addColumn("Tuổi");
+		tbSinhVien = new JTable(dtm);
+		JScrollPane sc = new JScrollPane(tbSinhVien,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
+				JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		
+		JPanel pnButton  = new JPanel();
+		pnButton.setLayout(new FlowLayout());
+		btnSearch = new JButton("Tìm kiếm");
+		txtSearch = new JTextField(20);
+		pnButton.add(btnSearch);
+		pnButton.add(txtSearch);
+		
+		Container ct = getContentPane();
+		ct.setLayout(new BorderLayout());
+		ct.add(sc);
+		ct.add(pnButton,BorderLayout.SOUTH);
+	}
+	public void addEvents() {
+		btnSearch.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				xuLyTimKiem(txtSearch.getText());
+				
+			}
+		});
+	}
+	protected void xuLyTimKiem(String searchKey) {
+		
+		String fileDB=".//db//dbSinhVien.accdb";
+		String strConn = "jdbc:ucanaccess:\\"+fileDB;
+		try {
+			conn = DriverManager.getConnection(strConn);
+			Statement statement = conn.createStatement();
+			String strSQL = "select * from SinhVien where HoTen like '%"+txtSearch.getText()
+			+"%' or DiaChi like '%"+txtSearch.getText()+"%' or Tuoi like '%"+txtSearch.getText()+"%'";
+			ResultSet result = statement.executeQuery(strSQL);
+		}
+		
+	}
+	public void showWindow() {
+		this.setSize(500,500);
+		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setModal(true);
+		this.setVisible(true);
+	}
+}

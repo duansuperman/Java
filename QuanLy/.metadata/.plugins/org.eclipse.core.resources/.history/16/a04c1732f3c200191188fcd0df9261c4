@@ -1,0 +1,38 @@
+package demo;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JDialog;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class FindUI extends JDialog {
+	DefaultTableModel dtm;
+	JTable tbSinhVien;
+	public FindUI(String title) {
+		this.setTitle(title);
+		showWindow();
+	}
+	public void addControls() {
+		dtm= new DefaultTableModel();
+		dtm.addColumn("Họ tên");
+		dtm.addColumn("Địa chỉ");
+		dtm.addColumn("Tuổi");
+		tbSinhVien = new JTable(dtm);
+		JScrollPane sc = new JScrollPane(tbSinhVien,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		
+		
+		Container ct = getContentPane();
+		ct.setLayout(new BorderLayout());
+		
+	}
+	public void showWindow() {
+		this.setSize(500,500);
+		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setModal(true);
+		this.setVisible(true);
+	}
+}

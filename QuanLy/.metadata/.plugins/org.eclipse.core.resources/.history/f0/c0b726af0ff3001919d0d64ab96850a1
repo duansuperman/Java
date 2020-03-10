@@ -1,0 +1,13 @@
+package learnjava.com.vn.drivers;
+
+import java.awt.List;
+import java.util.Vector;
+
+import learnjava.com.vn.modules.HangHoa;
+
+public class HangHoaDriver {
+	public static Vector<HangHoa> getAllData(){
+		Vector<HangHoa> vecHangHoa = null;
+		
+	}
+}

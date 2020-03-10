@@ -1,0 +1,66 @@
+package learnjava.com.vn.drivers;
+
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Vector;
+
+import learnjava.com.vn.modules.ChiTietHoaDon;
+import learnjava.com.vn.modules.HoaDon;
+
+public class ChiTietHoaDonDriver {
+	public static  Connection conn = learnjava.com.vn.connection.Connection.getConnection();
+	public static Vector<ChiTietHoaDon> getAllData(){
+		Vector<ChiTietHoaDon> vecChiTietHD = null;
+		try {
+			String strSQL = "Select * from chitiethd";
+			PreparedStatement prepare = conn.prepareStatement(strSQL);
+			ResultSet result = prepare.executeQuery();
+			vecChiTietHD = new Vector<ChiTietHoaDon>();
+			while(result.next()) {
+				vecChiTietHD.add(new ChiTietHoaDon(result.getInt("MaCT"), result.getInt("MaHH"),
+						result.getInt("MaHD"), result.getInt("SoLuongMua"),
+						result.getDouble("DonGia")));
+				
+			}
+			
+			
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return vecChiTietHD;
+	}
+	public static ChiTietHoaDon getDataById(int maCT) {
+		ChiTietHoaDon cthd =null;
+		try {
+			String strSQL="select * from chitiethd where MaCT = ?";
+			PreparedStatement prepare = conn.prepareStatement(strSQL);
+			prepare.setInt(1, maCT);
+			ResultSet result = prepare.executeQuery();
+			if(result.next()) {
+				cthd = new ChiTietHoaDon(result.getInt("MaCT"), result.getInt("MaHH"),
+						result.getInt("MaHD"), result.getInt("SoLuongMua"),
+						result.getDouble("DonGia"));
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return cthd;
+	}
+	public static Boolean deleteChiTietHoaDonById(int maCT) {
+		try {
+			String strSQL="delete * from chitiethd where MaCT = ?";
+			PreparedStatement prepare = conn.prepareStatement(strSQL);
+			prepare.setInt(1, maCT);
+			preparedStatement.executeUpdate();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+}

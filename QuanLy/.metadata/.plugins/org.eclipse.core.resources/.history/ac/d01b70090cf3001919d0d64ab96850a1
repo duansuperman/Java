@@ -1,0 +1,9 @@
+package learnjava.com.vn.modules;
+
+public class HangHoa {
+	int Ma;
+	String TenHangHoa;
+	String DinhDanh;
+	int SoLuong;
+	double DonGia;
+}
